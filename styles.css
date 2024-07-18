@@ -1,0 +1,273 @@
+body {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  text-align: left;
+}
+
+.content-container {
+  margin-left: 185px; /* Adjust this value to bring the content further to the right */
+}
+
+.breadcrumb {
+  margin: 30px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb img {
+  margin-left: 18px; /* Adjust the spacing between the text and image as needed */
+  transform: rotate(-30deg);
+}
+
+.custom-link {
+  color: black; /* Change to the color you prefer */
+  text-decoration: none; /* Remove underline */
+}
+
+.custom-link:hover {
+  text-decoration: underline; /* Underline on hover, if desired */
+}
+
+.spacer {
+  margin: 0 5px; /* Adjust the spacing as needed */
+}
+
+.image-row {
+  display: flex;
+  margin-top: 20px;
+}
+
+.image-row img {
+  width: 420px; /* Slightly reduce width to account for any rounding issues */
+  height: 370px;
+  top: 182px;
+  left: 679px;
+}
+
+.image-row img:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.image-row img:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.custom-line {
+  width: 80%;
+  border: 0;
+  border-top: 0.4px solid #00000099;
+  margin: 0 auto;
+  margin-top: 20px;
+}  
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  width: 48%; /* Adjust width as needed */
+  margin-bottom: 100px;
+  font-family: 'SF Pro Display', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.list-container li {
+  margin-bottom: 15px; /* Adjust bottom margin between list items as needed */
+}
+
+.content-container1 {
+  margin-left: 185px; /* Adjust this value to bring the content further to the right */
+  margin-top: 100px;
+}
+
+.title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.subtitle {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: left;
+  color: #171717B2;
+}
+
+.description {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.open-today {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.time {
+  color: #171717B2;
+}
+
+.section-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.list {
+  font-family: 'SF Pro Display', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.open-hours {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  gap: 100px;
+  font-size: 0;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-Scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.container123 {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border: none;
+  outline: none;
+  background: #FFAA33;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #FFD580;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -20px;
+  /* display: none;  If intended to hide, leave it as is */
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -20px;
+}
+
+.carousel {
+  display: flex;
+  margin-top:50px;
+  
+}
+
+.container123 .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  height: 2px;
+  width: 100%;
+  background: white;
+  position: relative;
+  border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #FFAA33;
+  border-radius: inherit;
+  cursor: grab;
+}
+
+.slider-scrollbar:hover .scrollbar-track:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    /* Adjust styles for mobile screens */
+    width: 200%; /* Adjust width as needed */
+    margin-left: 140px; /* Center the carousel horizontally */
+    /* You can also adjust other styles as needed */
+    
+  }
+  .carousel img {
+    max-width: 100%; /* Set maximum width of the image to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    /* Decrease height and width of the image */
+    max-height: 200px; /* Set maximum height of the image */
+    max-width: 200px; /* Set maximum width of the image */
+  }
+}
